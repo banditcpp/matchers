@@ -1,6 +1,7 @@
 #ifndef MATCHERS_MATCHER_H
 #define MATCHERS_MATCHER_H
 
+#include <memory>
 #include <sstream>
 
 namespace Matchers {

@@ -2,9 +2,8 @@
 #define MATCHERS_EQUAL_H
 
 #include <cstring>
-#include <memory>
-
 #include "Matcher.h"
+#include "ValueProxy.h"
 
 namespace Matchers {
 
@@ -32,12 +31,12 @@ namespace Matchers {
 
 	bool matches(char* actualValue) const
 	{
-	    return strcmp(actualValue, &*_expectedValue) == 0;
+	    return std::strcmp(actualValue, &*_expectedValue) == 0;
 	}
 
 	bool matches(const char* actualValue) const
 	{
-	    return strcmp(actualValue, &*_expectedValue) == 0;
+	    return std::strcmp(actualValue, &*_expectedValue) == 0;
 	}
 
 	template<typename U>

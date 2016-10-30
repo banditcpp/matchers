@@ -1,6 +1,8 @@
 #ifndef MATCHERS_MATCHER_EXCEPTION_H
 #define MATCHERS_MATCHER_EXCEPTION_H
 
+#include <stdexcept>
+
 namespace Matchers {
     class MatcherException : public std::exception
     {

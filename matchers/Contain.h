@@ -1,8 +1,9 @@
 #ifndef MATCHERS_CONTAIN_H
 #define MATCHERS_CONTAIN_H
 
+#include <algorithm>
 #include <cstring>
-
+#include <vector>
 #include "Matcher.h"
 
 namespace Matchers {
@@ -30,12 +31,12 @@ namespace Matchers {
 
 	bool matches(const char *const container) const
 	{
-	    return (_element != NULL) && (container != NULL) && (strstr(container, _element) != NULL);
+	    return (_element != NULL) && (container != NULL) && (std::strstr(container, _element) != NULL);
 	}
 
 	bool matches(char *const container) const
 	{
-	    return (_element != NULL) && (container != NULL) && (strstr(container, _element) != NULL);
+	    return (_element != NULL) && (container != NULL) && (std::strstr(container, _element) != NULL);
 	}
 
     protected:
