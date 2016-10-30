@@ -79,12 +79,9 @@ describe("when the actual value is declared as a C string", []{
     describe("and the expected value is declared as a C string", [&]{
 	std::unique_ptr<char> expectedValue;
 
-	before_each([&]{
-	    expectedValue.reset((char*)calloc(len + 1, sizeof(char)));
-	});
-
 	describe("and the values are equal", [&]{
 	    before_each([&]{
+		expectedValue.reset((char*)calloc(len + 1, sizeof(char)));
 		std::copy(actualValue, actualValue + len, expectedValue.get());
 	    });
 
@@ -99,6 +96,7 @@ describe("when the actual value is declared as a C string", []{
 
 	describe("and the values are not equal", [&]{
 	    before_each([&]{
+		expectedValue.reset((char*)calloc(len + 1, sizeof(char)));
 		std::copy(actualValue, actualValue+len, expectedValue.get());
 		*(expectedValue.get()+1) = 'b'; // "abtualValue"
 	    });
@@ -134,12 +132,9 @@ describe("when the actual value is declared as a C string", []{
     describe("when the expected value is a unique_ptr to a C string", [&]{
 	std::unique_ptr<char> expectedValue;
 
-	before_each([&]{
-	    expectedValue.reset((char*)calloc(len + 1, sizeof(char)));
-	});
-
 	describe("and the values are equal", [&]{
 	    before_each([&]{
+		expectedValue.reset((char*)calloc(len + 1, sizeof(char)));
 		std::copy(actualValue, actualValue + len, expectedValue.get());
 	    });
 
@@ -159,12 +154,9 @@ describe("when the actual value is a unique_ptr", []{
     auto expectedValue = (char*)"expectedValue";
     const size_t len = strlen(expectedValue);
 
-    before_each([&]{
-	actualValue.reset((char*)calloc(len + 1, sizeof(char)));
-    });
-
     describe("when the strings are equal", [&]{
 	before_each([&]{
+	    actualValue.reset((char*)calloc(len + 1, sizeof(char)));
 	    std::copy(expectedValue, expectedValue + len, actualValue.get());
 	});
 
@@ -175,6 +167,7 @@ describe("when the actual value is a unique_ptr", []{
 
     describe("when the strings are not equal", [&]{
 	before_each([&]{
+	    actualValue.reset((char*)calloc(len + 1, sizeof(char)));
 	    std::copy(expectedValue, expectedValue + len, actualValue.get());
 	    *(actualValue.get() + 4) = 'b'; // "expebtedValue"
 	});
