@@ -7,7 +7,7 @@ namespace Matchers {
     class MatcherException : public std::exception
     {
     public:
-	MatcherException(const std::string& filename, const unsigned linenumber, const std::string& message) : _filename(filename), _linenumber(linenumber), _message(message) {}
+	MatcherException(const std::string& fn, const unsigned lineno, const std::string& msg) : _filename(fn), _linenumber(lineno), _message(msg) {}
 	virtual ~MatcherException() throw() {}
 
 	std::string& filename()	{ return _message; }
