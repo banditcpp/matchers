@@ -1,5 +1,7 @@
 matchers
 ========
+[![Travis CI Status](https://travis-ci.org/banditcpp/matchers.svg)](https://travis-ci.org/banditcpp/matchers)
+[![AppVeyor Status](https://ci.appveyor.com/api/projects/status/github/banditcpp/matchers?branch=master&svg=true)](https://ci.appveyor.com/project/banditcpp/matchers)
 
 An assertion library for C++11
 
