@@ -1,9 +1,9 @@
-#ifndef BANDIT_THROWEXCEPTION_H
-#define BANDIT_THROWEXCEPTION_H
+#ifndef MATCHERS_THROWEXCEPTION_H
+#define MATCHERS_THROWEXCEPTION_H
 
 #include "Matcher.h"
 
-namespace bandit { namespace Matchers {
+namespace Matchers {
 
     template <typename T>
     class ThrowException : public Matcher
@@ -58,6 +58,6 @@ namespace bandit { namespace Matchers {
     };
 
     static const ThrowException<std::exception> throw_exception;
-}}
+}
 
-#endif	// BANDIT_THROWEXCEPTION_H
+#endif

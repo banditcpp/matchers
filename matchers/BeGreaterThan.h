@@ -1,9 +1,9 @@
-#ifndef BANDIT_BEGREATERTHAN_H
-#define BANDIT_BEGREATERTHAN_H
+#ifndef MATCHERS_BEGREATERTHAN_H
+#define MATCHERS_BEGREATERTHAN_H
 
 #include "Matcher.h"
 
-namespace bandit { namespace Matchers {
+namespace Matchers {
 
     template<typename T>
     class BeGreaterThan : public Matcher
@@ -38,6 +38,6 @@ namespace bandit { namespace Matchers {
     {
         return BeGreaterThan<T>(expectedValue);
     }
-}}
+}
 
-#endif	// BANDIT_BEGREATERTHAN_H
+#endif

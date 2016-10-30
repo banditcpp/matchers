@@ -1,9 +1,9 @@
-#ifndef BANDIT_BEFALSY_H
-#define BANDIT_BEFALSY_H
+#ifndef MATCHERS_BEFALSY_H
+#define MATCHERS_BEFALSY_H
 
 #include "Matcher.h"
 
-namespace bandit { namespace Matchers {
+namespace Matchers {
 
     class BeFalsy : public Matcher
     {
@@ -29,6 +29,6 @@ namespace bandit { namespace Matchers {
     };
 
     static const BeFalsy be_falsy = BeFalsy();
-}}
+}
 
-#endif	// BANDIT_BEFALSY_H
+#endif

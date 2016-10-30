@@ -1,6 +1,6 @@
 #include <specs/specs.h>
 
-using namespace bandit::Matchers;
+using namespace Matchers;
 
 SPEC_BEGIN(Matchers::BeGreaterThan)
 

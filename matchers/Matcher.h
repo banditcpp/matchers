@@ -1,11 +1,9 @@
-#ifndef BANDIT_MATCHER_H
-#define BANDIT_MATCHER_H
+#ifndef MATCHERS_MATCHER_H
+#define MATCHERS_MATCHER_H
 
 #include <sstream>
 
-//#import "CedarStringifiers.h"
-
-namespace bandit { namespace Matchers {
+namespace Matchers {
     class Matcher
     {
     private:
@@ -73,6 +71,6 @@ namespace bandit { namespace Matchers {
     protected:
         virtual std::string failure_message_end() const = 0;
     };
-}}
+}
 
-#endif	// BANDIT_MATCHER_H
+#endif

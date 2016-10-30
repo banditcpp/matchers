@@ -1,9 +1,9 @@
-#ifndef BANDIT_MATCHPROXY_H
-#define BANDIT_MATCHPROXY_H
+#ifndef MATCHERS_MATCHPROXY_H
+#define MATCHERS_MATCHPROXY_H
 
 #include "MatcherException.h"
 
-namespace bandit { namespace Matchers
+namespace Matchers
 {
     template<typename T> class ValueProxy;
 
@@ -38,6 +38,6 @@ namespace bandit { namespace Matchers
         const ValueProxy<T>& _value;
         bool _negate;
     };
-}}
+}
 
-#endif	// BANDIT_MATCHPROXY_H
+#endif

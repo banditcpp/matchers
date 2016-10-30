@@ -1,11 +1,11 @@
-#ifndef BANDIT_CONTAIN_H
-#define BANDIT_CONTAIN_H
+#ifndef MATCHERS_CONTAIN_H
+#define MATCHERS_CONTAIN_H
 
 #include <cstring>
 
 #include "Matcher.h"
 
-namespace bandit { namespace Matchers {
+namespace Matchers {
 
     template<typename T>
     class Contain : public Matcher
@@ -55,6 +55,6 @@ namespace bandit { namespace Matchers {
     {
         return Contain<T>(element);
     }
-}}
+}
 
-#endif	// BANDIT_CONTAIN_H
+#endif

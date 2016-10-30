@@ -1,9 +1,9 @@
-#ifndef BANDIT_BECLOSETO_H
-#define BANDIT_BECLOSETO_H
+#ifndef MATCHERS_BECLOSETO_H
+#define MATCHERS_BECLOSETO_H
 
 #include "Matcher.h"
 
-namespace bandit { namespace Matchers {
+namespace Matchers {
 
     template<typename T>
     class BeCloseTo : public Matcher
@@ -54,6 +54,6 @@ namespace bandit { namespace Matchers {
     {
         return BeCloseTo<T>(expectedValue);
     }
-}}
+}
 
-#endif	// BANDIT_BECLOSETO_H
+#endif

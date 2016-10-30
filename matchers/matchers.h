@@ -1,5 +1,5 @@
-#ifndef BANDIT_MATCHERS_H
-#define BANDIT_MATCHERS_H
+#ifndef MATCHERS_MATCHERS_H
+#define MATCHERS_MATCHERS_H
 
 #include "must.h"
 
@@ -16,4 +16,4 @@
 #include "Equal.h"
 #include "ThrowException.h"
 
-#endif	// BANDIT_MATCHERS_H
+#endif

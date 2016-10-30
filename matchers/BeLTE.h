@@ -1,9 +1,9 @@
-#ifndef BANDIT_BELESSTHANOREQUAL_H
-#define BANDIT_BELESSTHANOREQUAL_H
+#ifndef MATCHERS_BELESSTHANOREQUAL_H
+#define MATCHERS_BELESSTHANOREQUAL_H
 
 #include "Matcher.h"
 
-namespace bandit { namespace Matchers {
+namespace Matchers {
 
     template<typename T>
     class BeLTE : public Matcher
@@ -44,6 +44,6 @@ namespace bandit { namespace Matchers {
     {
         return be_lte(expectedValue);
     }
-}}
+}
 
-#endif	// BANDIT_BELESSTHANOREQUAL_H
+#endif

@@ -1,9 +1,9 @@
-#ifndef BANDIT_BEGREATERTHANOREQUAL_H
-#define BANDIT_BEGREATERTHANOREQUAL_H
+#ifndef MATCHERS_BEGREATERTHANOREQUAL_H
+#define MATCHERS_BEGREATERTHANOREQUAL_H
 
 #include "Matcher.h"
 
-namespace bandit { namespace Matchers {
+namespace Matchers {
 
     template<typename T>
     class BeGTE : public Matcher
@@ -44,6 +44,6 @@ namespace bandit { namespace Matchers {
     {
         return be_gte(expectedValue);
     }
-}}
+}
 
-#endif	// BANDIT_BEGREATERTHANOREQUAL_H
+#endif

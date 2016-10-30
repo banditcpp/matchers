@@ -1,9 +1,9 @@
-#ifndef BANDIT_MUST_H
-#define BANDIT_MUST_H
+#ifndef MATCHERS_MUST_H
+#define MATCHERS_MUST_H
 
 #include "ValueProxy.h"
 
-namespace bandit { namespace Matchers
+namespace Matchers
 {
     struct ValueMarker
     {
@@ -28,9 +28,9 @@ namespace bandit { namespace Matchers
     {
         matchProxy(matcher);
     }
-}}
+}
 
-#define must     ,bandit::Matchers::ValueMarker{__FILE__, __LINE__},false,
-#define must_not ,bandit::Matchers::ValueMarker{__FILE__, __LINE__},true,
+#define must     , Matchers::ValueMarker{__FILE__, __LINE__},false,
+#define must_not , Matchers::ValueMarker{__FILE__, __LINE__},true,
 
-#endif	//BANDIT_MUST_H
+#endif

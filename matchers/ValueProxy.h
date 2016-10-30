@@ -1,9 +1,9 @@
-#ifndef BANDIT_VALUEPROXY_H
-#define BANDIT_VALUEPROXY_H
+#ifndef MATCHERS_VALUEPROXY_H
+#define MATCHERS_VALUEPROXY_H
 
 #include "MatchProxy.h"
 
-namespace bandit { namespace Matchers {
+namespace Matchers {
 
     template<typename T>
     class ValueProxy
@@ -27,6 +27,6 @@ namespace bandit { namespace Matchers {
         std::string _filename;
         int         _lineNumber;
     };
-}}
+}
 
-#endif	// BANDIT_VALUEPROXY_H
+#endif

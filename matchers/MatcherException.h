@@ -1,7 +1,7 @@
-#ifndef BANDIT_MATCHER_EXCEPTION_H
-#define BANDIT_MATCHER_EXCEPTION_H
+#ifndef MATCHERS_MATCHER_EXCEPTION_H
+#define MATCHERS_MATCHER_EXCEPTION_H
 
-namespace bandit { namespace Matchers {
+namespace Matchers {
     class MatcherException : public std::exception
     {
     public:
@@ -17,6 +17,6 @@ namespace bandit { namespace Matchers {
 	unsigned	_linenumber;
 	std::string	_message;
     };
-}}
+}
 
-#endif	// BANDIT_MATCHER_EXCEPTION_H
+#endif

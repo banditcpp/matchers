@@ -1,9 +1,9 @@
-#ifndef BANDIT_BETRUTHY_H
-#define BANDIT_BETRUTHY_H
+#ifndef MATCHERS_BETRUTHY_H
+#define MATCHERS_BETRUTHY_H
 
 #include "Matcher.h"
 
-namespace bandit { namespace Matchers {
+namespace Matchers {
 
     class BeTruthy : public Matcher
     {
@@ -29,6 +29,6 @@ namespace bandit { namespace Matchers {
     };
 
     static const BeTruthy be_truthy = BeTruthy();
-}}
+}
 
-#endif	// BANDIT_BETRUTHY_H
+#endif

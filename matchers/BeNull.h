@@ -1,9 +1,9 @@
-#ifndef BANDIT_BENULL_H
-#define BANDIT_BENULL_H
+#ifndef MATCHERS_BENULL_H
+#define MATCHERS_BENULL_H
 
 #include "Matcher.h"
 
-namespace bandit { namespace Matchers {
+namespace Matchers {
 
     class BeNull : public Matcher
     {
@@ -28,6 +28,6 @@ namespace bandit { namespace Matchers {
     };
 
     static const BeNull be_null = BeNull();
-}}
+}
 
-#endif	// BANDIT_BENULL_H
+#endif

@@ -1,12 +1,12 @@
-#ifndef BANDIT_EQUAL_H
-#define BANDIT_EQUAL_H
+#ifndef MATCHERS_EQUAL_H
+#define MATCHERS_EQUAL_H
 
 #include <cstring>
 #include <memory>
 
 #include "Matcher.h"
 
-namespace bandit { namespace Matchers {
+namespace Matchers {
 
     template<typename T>
     std::ostream& operator<<(std::ostream& os, const std::unique_ptr<T>& obj)
@@ -90,6 +90,6 @@ namespace bandit { namespace Matchers {
         matchProxy.negate()(equal(expectedValue));
         return true;
     }
-}}
+}
 
-#endif	// BANDIT_EQUAL_H
+#endif
