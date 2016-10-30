@@ -1,6 +1,7 @@
 #ifndef MATCHERS_MATCHER_H
 #define MATCHERS_MATCHER_H
 
+#include <functional>
 #include <memory>
 #include <sstream>
 
