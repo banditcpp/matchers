@@ -17,7 +17,7 @@ namespace Matchers {
         template<typename U>
         bool matches(const U& actualValue) const
 	{
-	    return !!actualValue;
+	    return bool(actualValue);
 	}
 
 
