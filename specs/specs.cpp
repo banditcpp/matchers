@@ -13,7 +13,7 @@ static void output(const std::string str) {
 	if (indent == 0) {
 		std::cout << str << std::endl;
 	} else {
-		for (int i = 0; i < indent-1; ++i) {
+		for (unsigned i = 0; i < indent-1; ++i) {
 			std::cout << "   ";
 		}
 		std::cout << " * " << str << std::endl;
