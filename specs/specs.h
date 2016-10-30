@@ -19,7 +19,7 @@ struct spec_register {
 
 extern void before_each(std::function<void()> func);
 extern void describe(const std::string str, std::function<void()> func);
-inline void xdescribe(const std::string str, std::function<void()> func) {};
+inline void xdescribe(const std::string, std::function<void()>) {};
 extern void it(const std::string str, std::function<void()> func);
 
 #define AssertThrows(EXCEPTION, CODE) { \
