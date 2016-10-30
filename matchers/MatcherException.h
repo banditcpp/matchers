@@ -8,7 +8,6 @@ namespace Matchers {
     {
     public:
 	MatcherException(const std::string& fn, const unsigned lineno, const std::string& msg) : _filename(fn), _linenumber(lineno), _message(msg) {}
-	virtual ~MatcherException() throw() {}
 
 	std::string& filename()	{ return _message; }
 	unsigned linenumber()	{ return _linenumber; }
