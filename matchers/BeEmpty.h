@@ -12,6 +12,7 @@ namespace Matchers {
 
     public:
         BeEmpty() : Matcher() {}
+        BeEmpty(const BeEmpty &) = default;
 
         template<typename U>
         bool matches(const U& container) const

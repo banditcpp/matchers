@@ -13,6 +13,7 @@ namespace Matchers {
 
     public:
         Matcher() {}
+        Matcher(const Matcher &) = default;
         virtual ~Matcher() {};
 
         template<typename U>
