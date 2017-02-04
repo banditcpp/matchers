@@ -12,6 +12,7 @@ namespace Matchers {
 
     public:
         BeFalsy() : Matcher() {}
+        BeFalsy(const BeFalsy &) = default;
         ~BeFalsy() {}
 
         template<typename U>

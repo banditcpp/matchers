@@ -12,6 +12,7 @@ namespace Matchers {
 
     public:
         BeNull() : Matcher() {}
+        BeNull(const BeNull &) = default;
         ~BeNull() {}
 
         template<typename U>
