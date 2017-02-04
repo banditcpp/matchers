@@ -12,6 +12,7 @@ namespace Matchers {
 
     public:
         BeTruthy() : Matcher() {}
+        BeTruthy(const BeTruthy &) = default;
         ~BeTruthy() {}
 
         template<typename U>
